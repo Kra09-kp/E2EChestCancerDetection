@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small package for Chest Cancer Detection using CNN
+Home-page: https://github.com/None/None
+Author-email: kirtipogra@gmail.com
+Project-URL: Bug Tracker, https://github.com/None/None/issues
+Description-Content-Type: text/markdown
+
+# End to End Chest Cancer Classification System using MLFlow and DVC in Pytorch
