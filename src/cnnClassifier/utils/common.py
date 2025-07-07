@@ -7,8 +7,9 @@ import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import Any
+from typing import Any, List
 import base64
+
 
 
 @ensure_annotations
@@ -39,7 +40,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     
 
 @ensure_annotations
-def create_directories(path_to_directories: list,verbose: bool = True) -> None:
+def create_directories(path_to_directories: list ,verbose: bool = True) -> type(None): # type: ignore
     """
     Creates directories if they do not exist.
     
@@ -53,6 +54,7 @@ def create_directories(path_to_directories: list,verbose: bool = True) -> None:
         os.makedirs(path, exist_ok=True)
         if verbose: 
             logger.info(f"Created directory: {path}")
+
 
 @ensure_annotations
 def save_json(path: Path, data: dict) -> None:
@@ -179,7 +181,7 @@ def decode_image(encoded_string: str, output_path: Path) -> None:
         logger.info(f"Image saved to {output_path}")
     except Exception as e:
         raise Exception(f"An error occurred while decoding the image: {e}")
-    
+
 @ensure_annotations
 def get_file_size(path: Path) -> int:
     """

@@ -1,7 +1,8 @@
 template.py
 .env
-*.egg-info/
+*.egg-info/*
 *.pyc
-__pycache__/
-dist/
-build/
+__pycache__/*
+dist/*
+build/*
+artifacts/*
