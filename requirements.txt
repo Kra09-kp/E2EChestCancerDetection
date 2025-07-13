@@ -21,4 +21,5 @@ uvicorn
 pydantic
 torchvision
 torchsummary
+tqdm
 -e .

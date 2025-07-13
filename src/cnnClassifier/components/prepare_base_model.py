@@ -1,6 +1,4 @@
 import os
-import urllib.request as request
-from zipfile import ZipFile
 from pathlib import Path
 import torch
 import torch.nn as nn
@@ -48,13 +46,12 @@ class PrepareBaseModel:
             model=self.config.base_model_save_path,
             classes=self.config.params_classes,
             freeze_all=freeze_all,
-            freeze_till=freeze_till,
-            learning_rate=self.config.params_learning_rate
+            freeze_till=freeze_till
         )
         # Save the updated model
         update_base_model_path = self.config.update_base_model_path
         os.makedirs(update_base_model_path.parent, exist_ok=True)
-        self.save_model(model, update_base_model_path)
+        torch.save(model, update_base_model_path)
         print(f"Updated base model saved at: {update_base_model_path}")
 
         # Print model summary
@@ -62,7 +59,7 @@ class PrepareBaseModel:
         summary(model, input_size=(3,224,224), batch_size=self.config.params_batch_size)
 
     @staticmethod
-    def _prepare_full_model(model,classes,freeze_all,freeze_till,learning_rate):
+    def _prepare_full_model(model,classes,freeze_all,freeze_till):
         """Prepares the full model by modifying the classifier and setting up the optimizer.
         
         Args:
@@ -88,13 +85,16 @@ class PrepareBaseModel:
         # Modify the classifier
         model.classifier = nn.Sequential(
             nn.Linear(25088, 1024),
+            nn.BatchNorm1d(1024),
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(1024, 256),
+            nn.BatchNorm1d(256),
             nn.ReLU(),
             nn.Dropout(0.3),
-            nn.Linear(256, classes)
+            nn.Linear(256, classes)  # for 4-class classification
         )
+
 
         return model
 

@@ -9,6 +9,9 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any, List
 import base64
+import torch
+import torchvision
+import torch.nn as nn
 
 
 
@@ -97,43 +100,6 @@ def load_json(path: Path) -> dict:
         raise ValueError(f"Error decoding JSON from the file {path}.")
     except Exception as e:
         raise Exception(f"An error occurred while loading the JSON file: {e}")
-    
-@ensure_annotations
-def save_model(path: Path, model: Any) -> None:
-    """
-    Saves a model to a file using joblib.
-    
-    Args:
-        path (Path): Path to save the model.
-        model (Any): Model to save.
-        
-    Returns:
-        None
-    """
-    joblib.dump(model, path)
-    logger.info(f"Model saved to {path}")
-
-@ensure_annotations
-def load_model(path: Path) -> Any:
-    """
-    Loads a model from a file using joblib.
-    
-    Args:
-        path (Path): Path to the model file.
-        
-    Returns:
-        Any: Loaded model.
-        
-    Raises:
-        FileNotFoundError: If the model file does not exist.
-        joblib.externals.loky.process_executor.TimeoutError: If there is an error loading the model.
-    """
-    try:
-        return joblib.load(path)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"The model file {path} does not exist.")
-    except Exception as e:
-        raise Exception(f"An error occurred while loading the model: {e}")
     
 
 @ensure_annotations
