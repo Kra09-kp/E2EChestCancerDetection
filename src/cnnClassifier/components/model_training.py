@@ -131,7 +131,7 @@ class Training:
             if epochs > 2: 
                 scheduler.step(epoch_val_loss)
             if epoch_val_accuracy > best_val_acc:
-                self.save_model(self.model, self.config.trained_model_path.parent / f"best_model_{epoch_val_accuracy:.3f}.pth")
+                self.save_model(self.model, self.config.trained_model_path.parent / f"best_model.pth")
                 best_val_acc= epoch_val_accuracy
 
         self.save_model(self.model, self.config.trained_model_path)
@@ -206,15 +206,5 @@ class Training:
         torch.save(model, path)
         print(f"Model saved at {path}")
 
-
-    @staticmethod
-    def load_model(model_path,device):
-        '''
-        Loads a updated VGG16 model with customized classifier from the specified path.
-        
-        Args:
-            model_path (str): Path to the model file.'''
-        model = torch.load(model_path, map_location=device)
-        return model
 
 

@@ -207,3 +207,321 @@ AttributeError: 'float' object has no attribute 'item'
 [2025-07-13 15:13:16,939|(INFO)| File: common | Message: Created directory: artifacts]
 [2025-07-13 15:13:16,941|(INFO)| File: common | Message: Created directory: artifacts/train_model]
 [2025-07-13 15:13:53,160|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-13 19:57:55,308|(INFO)| File: _client | Message: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"]
+[2025-07-13 19:57:56,799|(INFO)| File: _client | Message: HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"]
+[2025-07-13 19:57:57,872|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-13 19:57:57,991|(INFO)| File: helpers | Message: Accessing as Kra09-kp]
+[2025-07-13 19:57:58,971|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-13 19:57:59,847|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-13 19:57:59,866|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-13 19:57:59,883|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-13 20:37:54,939|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-13 20:37:55,070|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-13 20:37:55,108|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-13 20:42:47,616|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-13 20:42:47,671|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-13 20:42:47,707|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-13 20:47:24,395|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-13 20:47:24,431|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-13 20:47:24,461|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-13 20:53:51,996|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-13 20:53:52,147|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-13 20:53:52,181|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-16 12:24:45,782|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:07:07,277|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:08:05,471|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:15:02,476|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:16:48,740|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=6, connect=7, read=6, redirect=7, status=7)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/get?run_uuid=a5e2e1cad8b94ec0a4ad748ad0b02dfe&run_id=a5e2e1cad8b94ec0a4ad748ad0b02dfe]
+[2025-07-18 14:19:54,291|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 14:19:54,346|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 14:19:54,362|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 14:20:43,971|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:21:44,027|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=6, connect=7, read=6, redirect=7, status=7)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-18 14:24:49,278|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:32:13,092|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=6, connect=7, read=6, redirect=7, status=7)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/get?run_uuid=acffef1baa7643c181615e6092a4661f&run_id=acffef1baa7643c181615e6092a4661f]
+[2025-07-18 14:34:41,482|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 14:39:13,911|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=6, connect=7, read=6, redirect=7, status=7)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/get?run_uuid=26cdd94a9e6e4eefb674793c61bacdc7&run_id=26cdd94a9e6e4eefb674793c61bacdc7]
+[2025-07-18 14:39:32,143|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 16:43:29,126|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 16:43:29,451|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 16:43:29,470|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 16:44:40,719|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 16:48:39,347|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 16:55:47,058|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 17:04:27,978|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 17:04:28,033|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 17:04:28,054|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 17:17:11,908|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/get-by-name?experiment_name=Model+Evaluation]
+[2025-07-18 17:26:25,569|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/search]
+[2025-07-18 17:27:21,441|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 17:30:02,795|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 17:30:02,838|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 17:30:02,860|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 17:32:34,133|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 17:33:42,075|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/get-by-name?experiment_name=Model+Evaluation]
+[2025-07-18 17:43:14,375|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 18:13:39,124|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/update]
+[2025-07-18 18:21:56,846|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 18:23:06,295|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/get-by-name?experiment_name=Model+Testing]
+[2025-07-18 18:28:27,238|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/get-by-name?experiment_name=Model+Testing]
+[2025-07-18 18:32:04,081|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 18:37:38,493|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'TimeoutError('The write operation timed out')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/cd25506464304c8c926ead801d48a19a/artifacts/model/data/model.pth]
+[2025-07-18 18:37:52,758|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=3, connect=5, read=4, redirect=5, status=5)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/cd25506464304c8c926ead801d48a19a/artifacts/model/data/model.pth]
+[2025-07-18 18:38:15,106|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=2, connect=5, read=4, redirect=5, status=5)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/cd25506464304c8c926ead801d48a19a/artifacts/model/data/model.pth]
+[2025-07-18 18:38:44,346|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=1, connect=4, read=4, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7df12ad53b50>: Failed to establish a new connection: [Errno 113] No route to host')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/cd25506464304c8c926ead801d48a19a/artifacts/model/data/model.pth]
+[2025-07-18 18:45:33,521|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=0, connect=4, read=3, redirect=5, status=5)) after connection broken by 'TimeoutError('The write operation timed out')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/cd25506464304c8c926ead801d48a19a/artifacts/model/data/model.pth]
+[2025-07-18 18:48:18,647|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/update]
+[2025-07-18 18:50:24,978|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=3, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/runs/update]
+[2025-07-18 18:51:49,670|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 18:55:15,111|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLError(5, '[SYS] unknown error (_ssl.c:2427)')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/c81e46be598a4559a79d55b714a7c207/artifacts/model/data/model.pth]
+[2025-07-18 18:58:52,063|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 19:05:06,100|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLError(5, '[SYS] unknown error (_ssl.c:2427)')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/95bf310a705b4cf7a8e59b512a7c467f/artifacts/model/data/model.pth]
+[2025-07-18 19:53:06,500|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 19:56:46,547|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow/experiments/get-by-name?experiment_name=Checking+Model]
+[2025-07-18 20:05:37,543|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'TimeoutError('The write operation timed out')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/9eb146ee28cc4f568ee763a6ea312929/artifacts/model/data/model.pth]
+[2025-07-18 22:09:10,670|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:09:10,671|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 22:09:10,735|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:09:10,738|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:09:10,770|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:09:10,773|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:09:10,775|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:15:25,452|(INFO)| File: data_ingestion | Message: Downloaded data to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:15:30,466|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 22:15:30,471|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 22:15:30,476|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:15:30,479|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 22:15:30,543|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:15:30,548|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 22:15:43,567|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 22:16:06,881|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 22:16:06,882|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:16:06,885|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 22:16:06,953|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:16:06,955|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 22:16:43,437|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 22:16:43,437|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:16:43,438|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 22:16:43,457|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:17:01,814|(ERROR)| File: main | Message: Error in running evaluation pipeline: [Errno 2] No such file or directory: 'artifacts/train_model/best_model.pth']
+Traceback (most recent call last):
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/main.py", line 51, in <module>
+    evaluation_pipeline.run()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/pipeline/stage04_model_evaluation.py", line 16, in run
+    evaluator.evaluation()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 85, in evaluation
+    self.model = self.load_model(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 77, in load_model
+    state_dict = torch.load(model_path,map_location=torch.device('cpu'))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/torch/serialization.py", line 1065, in load
+    with _open_file_like(f, 'rb') as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/torch/serialization.py", line 468, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/torch/serialization.py", line 449, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/train_model/best_model.pth'
+[2025-07-18 22:19:40,231|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:19:40,232|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 22:19:40,247|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:19:40,248|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:19:40,261|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:19:40,262|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:19:40,263|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:19:40,263|(INFO)| File: data_ingestion | Message: File already exists at artifacts/data_ingestion/data.zip with size 124379012 bytes. Skipping download.]
+[2025-07-18 22:19:49,671|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 22:19:49,673|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 22:19:49,673|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:19:49,674|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 22:19:49,688|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:19:49,689|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 22:20:04,961|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 22:20:30,144|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 22:20:30,145|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:20:30,146|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 22:20:30,170|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:20:30,175|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 22:21:05,194|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 22:21:05,195|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:21:05,195|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 22:21:05,208|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:21:23,203|(ERROR)| File: main | Message: Error in running evaluation pipeline: Expected state_dict to be dict-like, got <class 'torchvision.models.vgg.VGG'>.]
+Traceback (most recent call last):
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/main.py", line 51, in <module>
+    evaluation_pipeline.run()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/pipeline/stage04_model_evaluation.py", line 16, in run
+    evaluator.evaluation()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 85, in evaluation
+    self.model = self.load_model(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 78, in load_model
+    model.load_state_dict(state_dict)
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2166, in load_state_dict
+    raise TypeError(f"Expected state_dict to be dict-like, got {type(state_dict)}.")
+TypeError: Expected state_dict to be dict-like, got <class 'torchvision.models.vgg.VGG'>.
+[2025-07-18 22:29:54,996|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:29:54,996|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 22:29:55,013|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:29:55,014|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:29:55,028|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:29:55,028|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:29:55,029|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:29:55,030|(INFO)| File: data_ingestion | Message: File already exists at artifacts/data_ingestion/data.zip with size 124379012 bytes. Skipping download.]
+[2025-07-18 22:29:59,848|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 22:29:59,849|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 22:29:59,850|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:29:59,850|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 22:29:59,863|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:29:59,863|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 22:30:12,073|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 22:30:36,889|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 22:30:36,890|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:30:36,891|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 22:30:36,912|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:30:36,913|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 22:31:14,992|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 22:31:14,992|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:31:14,993|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 22:31:15,006|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:31:30,246|(INFO)| File: common | Message: Saved data to scores.json]
+[2025-07-18 22:31:30,247|(ERROR)| File: main | Message: Error in running evaluation pipeline: isinstance() arg 2 must be a type, a tuple of types, or a union]
+Traceback (most recent call last):
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/main.py", line 51, in <module>
+    evaluation_pipeline.run()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/pipeline/stage04_model_evaluation.py", line 16, in run
+    evaluator.evaluation()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 118, in evaluation
+    self.save_score()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 123, in save_score
+    save_json(
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/ensure/main.py", line 850, in __call__
+    if not isinstance(return_val, self.return_templ):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+[2025-07-18 22:45:12,275|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:45:12,276|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 22:45:12,291|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:45:12,291|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:45:12,305|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:45:12,306|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:45:12,306|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:45:12,307|(INFO)| File: data_ingestion | Message: File already exists at artifacts/data_ingestion/data.zip with size 124379012 bytes. Skipping download.]
+[2025-07-18 22:45:18,182|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 22:45:18,184|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 22:45:18,185|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:45:18,185|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 22:45:18,202|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:45:18,203|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 22:45:27,512|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 22:45:51,957|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 22:45:51,958|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:45:51,959|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 22:45:51,982|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:45:51,983|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 22:46:29,311|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 22:46:29,311|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:46:29,312|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 22:46:29,326|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:46:44,852|(INFO)| File: common | Message: Saved data to scores.json]
+[2025-07-18 22:46:46,372|(ERROR)| File: main | Message: Error in running evaluation pipeline: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/main.py", line 51, in <module>
+    evaluation_pipeline.run()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/pipeline/stage04_model_evaluation.py", line 17, in run
+    evaluator.log_into_mlflow()
+  File "/media/kirti/Dev/DeepLearning/Project/E2E/ChestCancerDetection/src/cnnClassifier/components/model_evaluation.py", line 136, in log_into_mlflow
+    with mlflow.start_run(): #type: ignore
+         ^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/tracking/fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/tracking/client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/client.py", line 131, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kirti/anaconda3/envs/deeplearning/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2025-07-18 22:48:33,199|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:48:33,200|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 22:48:33,217|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:48:33,218|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:48:33,234|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:48:33,235|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 22:48:33,235|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 22:48:33,236|(INFO)| File: data_ingestion | Message: File already exists at artifacts/data_ingestion/data.zip with size 124379012 bytes. Skipping download.]
+[2025-07-18 22:48:41,450|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 22:48:41,451|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 22:48:41,452|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:48:41,452|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 22:48:41,466|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:48:41,467|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 22:48:50,436|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 22:49:16,595|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 22:49:16,596|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:49:16,596|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 22:49:16,620|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:49:16,622|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 22:49:54,648|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 22:49:54,648|(INFO)| File: main | Message: **************************]
+[2025-07-18 22:49:54,649|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 22:49:54,662|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 22:50:10,275|(INFO)| File: common | Message: Saved data to scores.json]
+[2025-07-18 22:50:11,166|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-18 22:50:11,191|(INFO)| File: helpers | Message: Accessing as Kra09-kp]
+[2025-07-18 22:50:11,824|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 22:50:12,811|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-18 22:50:12,819|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 22:50:12,822|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 22:54:48,412|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage completed <<<<<<]
+[2025-07-18 23:04:41,295|(INFO)| File: main | Message: **************************]
+[2025-07-18 23:04:41,296|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-18 23:04:41,317|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 23:04:41,318|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 23:04:41,336|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 23:04:41,337|(INFO)| File: common | Message: Created directory: artifacts/data_ingestion]
+[2025-07-18 23:04:41,338|(INFO)| File: data_ingestion | Message: Downloading data from https://drive.google.com/file/d/1ArZQhYChicOaM2AFE7dj0FNDzQPwBW7L/view?usp=sharing to artifacts/data_ingestion/data.zip]
+[2025-07-18 23:04:41,339|(INFO)| File: data_ingestion | Message: File already exists at artifacts/data_ingestion/data.zip with size 124379012 bytes. Skipping download.]
+[2025-07-18 23:04:49,319|(INFO)| File: data_ingestion | Message: Unzipped data to artifacts/data_ingestion]
+[2025-07-18 23:04:49,321|(INFO)| File: main | Message: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2025-07-18 23:04:49,321|(INFO)| File: main | Message: **************************]
+[2025-07-18 23:04:49,321|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage started <<<<<<]
+[2025-07-18 23:04:49,336|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 23:04:49,337|(INFO)| File: common | Message: Created directory: artifacts/prepare_base_model]
+[2025-07-18 23:05:00,832|(INFO)| File: stage02_prepare_base_model | Message: Base model created successfully. Now updating the base model...]
+[2025-07-18 23:05:26,093|(INFO)| File: main | Message: >>>>>> stage Prepare Base Model Stage completed <<<<<<]
+[2025-07-18 23:05:26,094|(INFO)| File: main | Message: **************************]
+[2025-07-18 23:05:26,095|(INFO)| File: main | Message: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-07-18 23:05:26,119|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 23:05:26,122|(INFO)| File: common | Message: Created directory: artifacts/train_model]
+[2025-07-18 23:06:04,441|(INFO)| File: main | Message: >>>>>> stage Model Training Stage completed <<<<<<]
+[2025-07-18 23:06:04,442|(INFO)| File: main | Message: **************************]
+[2025-07-18 23:06:04,442|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage started <<<<<<]
+[2025-07-18 23:06:04,458|(INFO)| File: common | Message: Created directory: artifacts]
+[2025-07-18 23:06:19,431|(INFO)| File: common | Message: Saved data to scores.json]
+[2025-07-18 23:06:20,179|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-18 23:06:20,209|(INFO)| File: helpers | Message: Accessing as Kra09-kp]
+[2025-07-18 23:06:21,008|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/repos/Kra09-kp/E2EChestCancerDetection "HTTP/1.1 200 OK"]
+[2025-07-18 23:06:21,805|(INFO)| File: _client | Message: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-18 23:06:21,813|(INFO)| File: helpers | Message: Initialized MLflow to track repo "Kra09-kp/E2EChestCancerDetection"]
+[2025-07-18 23:06:21,815|(INFO)| File: helpers | Message: Repository Kra09-kp/E2EChestCancerDetection initialized!]
+[2025-07-18 23:12:23,895|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'TimeoutError('The write operation timed out')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/152881aef7454709872d71bdf9845831/artifacts/model/data/model.pth]
+[2025-07-18 23:12:57,323|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=3, connect=5, read=3, redirect=5, status=5)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/152881aef7454709872d71bdf9845831/artifacts/model/data/model.pth]
+[2025-07-18 23:13:45,535|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=2, connect=5, read=3, redirect=5, status=5)) after connection broken by 'SSLError(5, '[SYS] unknown error (_ssl.c:2427)')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/152881aef7454709872d71bdf9845831/artifacts/model/data/model.pth]
+[2025-07-18 23:17:21,349|(WARNING)| File: connectionpool | Message: Retrying (Retry(total=1, connect=5, read=3, redirect=5, status=5)) after connection broken by 'SSLError(5, '[SYS] unknown error (_ssl.c:2427)')': /Kra09-kp/E2EChestCancerDetection.mlflow/api/2.0/mlflow-artifacts/artifacts/72db5ed5d54f4bdfb5c17184ab9c7296/152881aef7454709872d71bdf9845831/artifacts/model/data/model.pth]
+[2025-07-18 23:21:55,991|(INFO)| File: main | Message: >>>>>> stage Model Evaluation Stage completed <<<<<<]

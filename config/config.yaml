@@ -16,3 +16,7 @@ prepare_base_model:
 train_model:
   root_dir: artifacts/train_model
   model_save_path: artifacts/train_model/model.pth
+
+
+
+

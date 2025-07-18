@@ -1,6 +1,10 @@
 from cnnClassifier.constants import *
 from cnnClassifier.utils.common import read_yaml, create_directories
-from cnnClassifier.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig)
+from cnnClassifier.entity.config_entity import (DataIngestionConfig, 
+                                                PrepareBaseModelConfig, 
+                                                TrainingConfig,
+                                                EvaluationConfig)
+from pathlib import Path
 import os
 
 class ConfigManager:
@@ -34,7 +38,9 @@ class ConfigManager:
             params_epochs=self.params.EPOCHS,
             params_classes=self.params.CLASSES,
             params_weights=self.params.WEIGHTS,
-            params_learning_rate=self.params.LEARNING_RATE
+            params_learning_rate=self.params.LEARNING_RATE,
+            params_freeze_all=self.params.FREEZE_ALL,
+            params_freeze_till=self.params.FREEZE_TILL
         )
 
         return prepare_base_model_config
@@ -60,3 +66,14 @@ class ConfigManager:
         )
 
         return training_config
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            model_path = Path("artifacts/train_model/best_model.pth"),
+            testing_data = "artifacts/data_ingestion/Data",
+            all_params=self.params,
+            mlflow_uri="https://dagshub.com/Kra09-kp/E2EChestCancerDetection.mlflow", 
+            params_image_size=self.params.IMAGE_SIZE[:2],
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

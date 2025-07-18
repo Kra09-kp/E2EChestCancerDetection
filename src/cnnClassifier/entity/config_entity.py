@@ -20,6 +20,8 @@ class PrepareBaseModelConfig:
     params_classes: int
     params_weights: str
     params_learning_rate: float
+    params_freeze_all: bool
+    params_freeze_till: int
 
 
 @dataclass(frozen=True)
@@ -33,3 +35,13 @@ class TrainingConfig:
     params_is_augmentation: bool
     params_learning_rate: float
     params_image_size: list
+
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    model_path: Path 
+    testing_data: str
+    all_params: dict
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int

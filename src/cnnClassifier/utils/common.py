@@ -60,7 +60,7 @@ def create_directories(path_to_directories: list ,verbose: bool = True) -> type(
 
 
 @ensure_annotations
-def save_json(path: Path, data: dict) -> None:
+def save_json(path: Path, data: dict) -> type(None): # type: ignore
     """
     Saves a dictionary to a JSON file.
     

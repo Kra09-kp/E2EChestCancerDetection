@@ -35,7 +35,7 @@ class PrepareBaseModel:
         print(f"Base model saved at: {base_model_save_path}")
 
 
-    def update_base_model(self, freeze_all=True, freeze_till=None):
+    def update_base_model(self):
         """Updates the base model by modifying the classifier and setting up the optimizer.
         
         Args:
@@ -45,8 +45,8 @@ class PrepareBaseModel:
         model = self._prepare_full_model(
             model=self.config.base_model_save_path,
             classes=self.config.params_classes,
-            freeze_all=freeze_all,
-            freeze_till=freeze_till
+            freeze_all=self.config.params_freeze_all,
+            freeze_till=self.config.params_freeze_till
         )
         # Save the updated model
         update_base_model_path = self.config.update_base_model_path
@@ -63,7 +63,7 @@ class PrepareBaseModel:
         """Prepares the full model by modifying the classifier and setting up the optimizer.
         
         Args:
-            model (torch.nn.Module): The base model to modify.
+            model (Path): Path to the base model.
             classes (int): Number of output classes.
             freeze_all (bool): Whether to freeze all layers.
             freeze_till (int): Layer index till which to freeze.
