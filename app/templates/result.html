@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <img src="/static/temp/{{ filename }}" alt="Uploaded Image" class="preview">
+        {% for item in prediction %}
+        <p class="prediction">
+            Predicted Class: <strong>{{ item['image'] }}</strong><br>
+            Confidence: <strong>{{ item['confidence'] }}</strong>
+        </p>
+        {% endfor %}
+        
+        <a href="/home" class="back-btn">Upload Another</a>
+    </div>
+</body>
+
+</html>

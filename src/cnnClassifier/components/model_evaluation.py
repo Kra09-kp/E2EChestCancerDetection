@@ -34,6 +34,8 @@ class ModelEvaluation:
             transform=self._transform
         )
 
+        print(f"Classes as per index (testing): {self.test_dataset.class_to_idx}")
+
         self.test_loader = data.DataLoader(
             dataset=self.test_dataset,
             batch_size=self.config.params_batch_size,

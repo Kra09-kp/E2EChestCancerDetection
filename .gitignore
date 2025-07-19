@@ -12,3 +12,4 @@ Model/*
 .dvc/tmp/
 *.dvc.lock
 pipeline.dvc.lock
+temp/

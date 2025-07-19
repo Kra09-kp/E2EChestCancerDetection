@@ -19,7 +19,9 @@ fastapi
 uvicorn
 pydantic
 torchvision
+python-multipart
 torchsummary
 tqdm
 dagshub
+PIL
 -e .

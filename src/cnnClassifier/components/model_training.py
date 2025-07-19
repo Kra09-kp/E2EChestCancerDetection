@@ -66,6 +66,9 @@ class Training:
             transform=self.val_transform
         )
 
+        print(f"Classes as per index (training): {self.train_dataset.class_to_idx}")
+        print(f"Classes as per index (validation): {self.valid_dataset.class_to_idx}")
+
         self.train_loader = data.DataLoader(
             dataset=self.train_dataset,
             batch_size=self.config.params_batch_size,
