@@ -14,7 +14,7 @@ class EvaluationPipeline:
         evaluation_config = self.config.get_evaluation_config()
         evaluator = ModelEvaluation(evaluation_config)
         evaluator.evaluation()
-        evaluator.log_into_mlflow()
+        # evaluator.log_into_mlflow()
 
 
 if __name__ == "__main__":

@@ -1,0 +1,67 @@
+stages:
+  data_ingestion:
+    cmd : python src/cnnClassifier/pipeline/stage01_data_ingestion.py
+    deps:
+      - src/cnnClassifier/pipeline/stage01_data_ingestion.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_ingestion/Data
+
+  prepare_base_model:
+    cmd: python src/cnnClassifier/pipeline/stage02_prepare_base_model.py
+    deps:
+      - src/cnnClassifier/pipeline/stage02_prepare_base_model.py
+      - config/config.yaml
+    params:
+      - AUGMENTATION
+      - IMAGE_SIZE
+      - BATCH_SIZE 
+      - EPOCHS
+      - CLASSES
+      - WEIGHTS
+      - LEARNING_RATE
+      - FREEZE_ALL
+      - FREEZE_TILL
+    outs:
+      - artifacts/prepare_base_model 
+  
+  train_model:
+    cmd: python src/cnnClassifier/pipeline/stage03_training_model.py
+    deps:
+      - src/cnnClassifier/pipeline/stage03_training_model.py
+      - config/config.yaml
+      - artifacts/data_ingestion/Data
+      - artifacts/prepare_base_model
+    params:
+      - AUGMENTATION
+      - IMAGE_SIZE
+      - BATCH_SIZE 
+      - EPOCHS
+      - CLASSES
+      - WEIGHTS
+      - LEARNING_RATE
+      - FREEZE_ALL
+      - FREEZE_TILL
+    outs:
+      - artifacts/train_model
+
+  model_evaluation:
+    cmd: python src/cnnClassifier/pipeline/stage04_model_evaluation.py
+    deps:
+      - src/cnnClassifier/pipeline/stage04_model_evaluation.py
+      - config/config.yaml
+      - artifacts/data_ingestion/Data
+      - artifacts/train_model/best_model.pth
+    params:
+      - AUGMENTATION
+      - IMAGE_SIZE
+      - BATCH_SIZE 
+      - EPOCHS
+      - CLASSES
+      - WEIGHTS
+      - LEARNING_RATE
+      - FREEZE_ALL
+      - FREEZE_TILL
+    metrics:
+      - scores.json:
+          cache: false

@@ -36,7 +36,8 @@ class Training:
         
         self.val_transform = T.Compose([
             T.Resize(self.config.params_image_size[:2]),
-            T.ToTensor(),
+            T.ToImage(),
+            T.ToDtype(torch.float32, scale=True),
             T.Normalize(mean=[0.485, 0.456, 0.406],
                        std=[0.229, 0.224, 0.225])
         ])
@@ -47,7 +48,8 @@ class Training:
                 T.RandomRotation(degrees=(-10, 10)),
                 T.ColorJitter(brightness=0.1, contrast=0.1),
                 T.Resize(self.config.params_image_size[:2]),
-                T.ToTensor(),
+                T.ToImage(),
+                T.ToDtype(torch.float32, scale=True),
                 T.Normalize(mean=[0.485, 0.456, 0.406],  # Same mean/std as ImageNet
                             std=[0.229, 0.224, 0.225])
             ])

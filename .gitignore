@@ -8,3 +8,7 @@ build/*
 artifacts/*
 Model/*
 .pth
+.dvc/cache/
+.dvc/tmp/
+*.dvc.lock
+pipeline.dvc.lock
