@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ChestCancerDetection
+    env: docker
+    plan: free
+    branch: main
+    region: singapore   # or "oregon" if you want US server
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /docs  # or / if you have some custom health route

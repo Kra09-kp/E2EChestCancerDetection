@@ -3,7 +3,7 @@ torch
 pandas
 gdown
 dvc
-mlflow <= 3
+mlflow == 2.2.2
 notebook
 numpy
 matplotlib

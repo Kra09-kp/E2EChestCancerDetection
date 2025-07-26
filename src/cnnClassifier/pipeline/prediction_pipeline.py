@@ -6,6 +6,7 @@ from io import BytesIO
 from cnnClassifier import logger
 
 model = torch.load(os.path.join("artifacts", "train_model", "best_model.pth"))
+# model = torch.load(os.path.join("Model","final_model.pth"))
 model.eval()
 
 logger.info("Model loaded successfully")
