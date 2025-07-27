@@ -31,8 +31,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
-      - name: Confirm Docker login
-        run: docker info
+      - name: Check login status
+        run: docker system info | grep -i username || echo "Not logged in"
+
 
 
 
