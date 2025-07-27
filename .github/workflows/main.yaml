@@ -31,6 +31,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
+      - name: Confirm Docker login
+        run: docker info
+
+
 
   deploy:
     name: Continuous Deployment
@@ -47,6 +51,7 @@ jobs:
       - name: 🚀 Push image to DockerHub
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/chest-cancer-detection:latest
+         
 
       # - name: 📡 Trigger Render Deploy Hook
       #   run: |
