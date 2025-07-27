@@ -17,13 +17,14 @@ RUN apt update -y
 WORKDIR /app
 
 # copy requirements.txt 
-COPY requirements.txt /app
+# COPY requirements.txt /app
+COPY . /app
 
 # Install requirements (torch already installed in base image, so remove it from requirements.txt)
 RUN pip install -r requirements.txt
 
 # Copy the rest of the application code
-COPY . /app
+# COPY . /app
 
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
