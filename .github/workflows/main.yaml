@@ -7,8 +7,9 @@ on:
       - 'README.md'
 
 permissions:
-  id-token: write
-  contents: read
+  id-token: write        # For OIDC and cloud deployments
+  contents: write        # For pushing code/tags, or uploading artifacts
+  packages: write        # For publishing to GitHub Packages or GHCR
 
 jobs:
   integration:
