@@ -25,14 +25,6 @@ jobs:
       - name: Run unit tests
         run: echo "Running unit tests"
       
-      - name: 🐳 Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-
-      - name: Check login status
-        run: docker system info | grep -i username || echo "Not logged in"
 
 
 
@@ -44,6 +36,13 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+
+      - name: 🐳 Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
 
       - name: 🏗️ Build Docker image
         run: |
