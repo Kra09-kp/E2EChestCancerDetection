@@ -51,7 +51,7 @@ stages:
       - src/cnnClassifier/pipeline/stage04_model_evaluation.py
       - config/config.yaml
       - artifacts/data_ingestion/Data
-      - artifacts/train_model/best_model.pth
+      - artifacts/train_model/
     params:
       - AUGMENTATION
       - IMAGE_SIZE

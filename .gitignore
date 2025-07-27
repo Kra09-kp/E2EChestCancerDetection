@@ -1,5 +1,4 @@
 template.py
-.env
 *.egg-info/*
 *.pyc
 __pycache__/*
@@ -13,3 +12,12 @@ Model/*
 *.dvc.lock
 pipeline.dvc.lock
 temp/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

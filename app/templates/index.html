@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Upload</title>
+    <title> Chest Cancer Detection </title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
     <div class="container">
+        <h3> Welcome to the Chest Cancer Detection App!</h3>
         <h1>Upload Image</h1>
         <form action="/predict" enctype="multipart/form-data" method="post">
-            <label for="file-upload">Select an image to upload:</label>
+            <label for="file-upload">Select an image to predict:</label>
             <input type="file" id="file-upload" name="file" accept="image/*" required title="Upload an image file" placeholder="Choose image">
             <button type="submit">Predict</button>
         </form>
