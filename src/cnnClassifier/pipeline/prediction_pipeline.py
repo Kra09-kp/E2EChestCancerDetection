@@ -4,9 +4,22 @@ from torchvision.transforms import v2 as T
 import os
 from io import BytesIO
 from cnnClassifier import logger
+from cnnClassifier.pipeline.model_download_pipeline import ModelInferencePipeline
 
-model = torch.load(os.path.join("artifacts", "train_model", "best_model.pth"))
-# model = torch.load(os.path.join("Model","final_model.pth"),map_location=torch.device('cpu'))
+# download model if not available
+
+ModelInferencePipeline().run()
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# model_path = os.path.join("artifacts", "train_model", "best_model.pth")
+# model_path = os.path.join("Model","final_model.pth")
+model_path = os.path.join("artifacts","model_inference","model.pth")
+
+model = torch.load(model_path,
+                   map_location=device,
+                   weights_only=False)
+
 model.eval()
 
 logger.info("Model loaded successfully")

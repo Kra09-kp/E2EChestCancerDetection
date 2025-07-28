@@ -45,3 +45,10 @@ class EvaluationConfig:
     mlflow_uri: str
     params_image_size: list
     params_batch_size: int
+
+@dataclass(frozen=True)
+class ModelInferenceConfig:
+    root_dir: Path
+    source_url: str
+    local_model_file: Path
+    model_dir: Path

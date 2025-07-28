@@ -12,6 +12,7 @@ Model/*
 *.dvc.lock
 pipeline.dvc.lock
 temp/
+docker-help.txt
 
 # Environments
 .env

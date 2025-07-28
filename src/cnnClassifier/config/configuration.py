@@ -3,7 +3,9 @@ from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.entity.config_entity import (DataIngestionConfig, 
                                                 PrepareBaseModelConfig, 
                                                 TrainingConfig,
-                                                EvaluationConfig)
+                                                EvaluationConfig,
+                                                ModelInferenceConfig)
+
 from pathlib import Path
 import os
 
@@ -77,3 +79,13 @@ class ConfigManager:
             params_batch_size=self.params.BATCH_SIZE
         )
         return eval_config
+
+    def get_model_inference_config(self) -> ModelInferenceConfig:
+        config = self.config.model_inference
+        create_directories([config.root_dir])
+        return ModelInferenceConfig(
+            root_dir=config.root_dir,
+            source_url=config.source_url,
+            local_model_file=config.local_model_file,
+            model_dir=config.model_dir
+        )

@@ -17,6 +17,10 @@ train_model:
   root_dir: artifacts/train_model
   model_save_path: artifacts/train_model/model.pth
 
-
+model_inference:
+  root_dir: artifacts/model_inference
+  source_url: https://drive.google.com/file/d/1wDxN-Fmsd3oGFJT2a__38iK_gtJfhFSo/view?usp=sharing
+  local_model_file: artifacts/model_inference/model.pth
+  model_dir: artifacts/model_inference
 
 
